@@ -84,7 +84,7 @@
     if (_icon == nil) {
         _icon = [[UIImageView alloc] init];
         _icon.image = [UIImage imageNamed:@"storage_night"];
-        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_storage_normal"], [UIImage imageNamed:@"storage_night"]);
+        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_storage_normal"], [UIImage imageNamed:@"icon_storage_normal"]);
     }
     return _icon;
 }

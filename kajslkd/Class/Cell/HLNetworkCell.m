@@ -110,7 +110,7 @@
 - (UIImageView *)icon {
     if (_icon == nil) {
         _icon = [[UIImageView alloc] init];
-        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_network_normal"], [UIImage imageNamed:@"network_night"]);
+        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_network_normal"], [UIImage imageNamed:@"icon_network_normal"]);
     }
     return _icon;
 }

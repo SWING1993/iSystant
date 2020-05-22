@@ -89,7 +89,7 @@
 - (UIImageView *)icon {
     if (_icon == nil) {
         _icon = [[UIImageView alloc] init];
-        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_memory_normal"], [UIImage imageNamed:@"memory_night"]);
+        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_memory_normal"], [UIImage imageNamed:@"icon_memory_normal"]);
     }
     return _icon;
 }

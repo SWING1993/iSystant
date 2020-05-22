@@ -180,7 +180,7 @@
 - (UIImageView *)icon {
     if (_icon == nil) {
         _icon = [[UIImageView alloc] init];
-        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_battery_normal"], [UIImage imageNamed:@"battery_night"]);
+        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_cpu_normal"], [UIImage imageNamed:@"icon_cpu_normal"]);
     }
     return _icon;
 }

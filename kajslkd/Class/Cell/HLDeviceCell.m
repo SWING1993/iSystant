@@ -69,7 +69,7 @@
 
 - (void)configDeviceData {
     
-    NSString *iphoneName    = [NSString stringWithFormat:@"%@ %@",HLLocalized(@"Welcome"), [HLDeviceInformation getiPhoneName]];
+    NSString *iphoneName    = [HLDeviceInformation getiPhoneName];
     NSString *deviceModel   = [HLDeviceInformation getDeviceName];
     NSString *sysVerion     = [HLDeviceInformation getSystemVersion];
     NSString *sysBuild      = [HLDeviceInformation getSystemBuildVersion];
@@ -87,7 +87,7 @@
     if (_icon == nil) {
         _icon = [[UIImageView alloc] init];
         _icon.image = [UIImage imageNamed:@"storage_night"];
-        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_storage_normal"], [UIImage imageNamed:@"storage_night"]);
+        _icon.dk_imagePicker = DKImagePickerWithImages([UIImage imageNamed:@"icon_device_normal"], [UIImage imageNamed:@"icon_device_normal"]);
     }
     return _icon;
 }
